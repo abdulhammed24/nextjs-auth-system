@@ -1,10 +1,10 @@
-import type React from "react"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { Navigation } from "@/components/Navigation"
-import { Providers } from "@/components/Providers"
+import type React from "react";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Navigation } from "@/components/Navigation";
+import { Providers } from "@/components/Providers";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,13 +16,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Providers>
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };
